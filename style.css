@@ -58,11 +58,14 @@
 
 .home {
     display: flex;
+    box-sizing: border-box;
     background: url("./image/banner.jpg") no-repeat center;
     background-size: cover;
     height: 100vh;
+    /* width: 100vw;
+    margin-right: 0%; */
     color: #fff;
-    min-height: 500px;
+    /* min-height: 500px; */
     font-family: 'Ubuntu', sans-serif;
    
 }  
@@ -169,10 +172,12 @@ section {
    
 }
 .my-img{
+    border-radius: 10px;
     height: 400px;
-    width: 400px;
+    width: 300px;
     object-fit: cover;
-    border-radius: 6px;
+    border: 5px solid white;
+    box-shadow: 1px 1px 1px 1px wheat;
     margin:10px;
 }
 

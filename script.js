@@ -2,7 +2,7 @@ $(document).ready(function(){
     $(window).scroll(function(){
         if(this.scrollY > 20){
            $('.navbar').addClass("sticky");
-           document.getElementById('scrollToTopBtn').style.display = 'block'
+           document.getElementById('scrollToTopBtn').style.display = 'flex'
         
         }else{
             $('.navbar').removeClass("sticky");
