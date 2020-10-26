@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#scrollToTopBtn {
+    display: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    left: 92%;
+    top:85%;
+    z-index: 99;
+
+}
+
+
+/* cursur */
+.typed-cursor{
+    display: none;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.navbar.sticky {
+    background: rgb(60, 163, 247); 
+    border-bottom: 2px solid white;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+}
+
+.navbar-brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Pacifico', cursive;
+    font-weight: 900;
+    background: url('/image/bk.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-left: 20px;
+    border: 2px solid #fff;
+
+}
+
+/* home */
+
+.home {
+    display: flex;
+    background: url("./image/banner.jpg") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+   
+}  
+
+.text-1 {
+    font-size: 27px;
+}
+
+.text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;  
+}
+
+.text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn a:hover{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.media{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    margin-top: 20px;
+}
+
+.media a i {
+    color: white;
+    cursor: pointer;
+}
+
+
+/* about section */
+section {
+    padding: 50px 0;
+}
+.about {
+    font-family: 'Poppins',sans-serif;
+}
+
+.about .title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.about .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111111;
+    transform: translate(-50%);
+}
+
+.about .title::after {
+    content: "who i am";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    padding: 5px;
+    font-size: 20px;
+    color:  rgb(60, 163, 247);
+    background:#fff;
+    transform: translate(-50%);
+}
+
+.about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+
+}
+
+.about-me {
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    margin-top: 10px;
+   
+}
+.my-img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin:10px;
+}
+
+
+.about .about-content .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right p {
+    text-align: justify;
+}
+
+.about .about-content .right a{
+    display: inline-block;
+    background: rgb(60, 163, 247);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(60, 163, 247);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.about .about-content .right a:hover{
+    color:  rgb(60, 163, 247);
+    background: none;
+}
+
+.title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    padding-top: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* projectsSection */
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    margin-left:  0%;
+}
+
+.pw {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 50px;
+    background:  rgb(60, 163, 247);
+    box-sizing: border-box;
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px 1px #275a72;
+}
+
+/* skillsection */
+
+.sk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    background:  rgb(60, 163, 247);
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px 1px #275a72;
+    border-radius: 5px;
+}
+
+.sk-text {
+    color:rgb(14, 13, 13);
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.cer1, .cer2, .cer3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 1px 1px #275a72;
+    border-radius: 5px; 
+    height: 200px;
+    opacity: 0.8;   
+}
+
+.cer1{
+    background: url('/image/html.jpg');
+    background-size: cover;
+}
+
+.cer2{
+    background: url('/image/css.jpg');
+    background-size: cover;
+}
+.cer3{
+    background: url('/image/javascript.jpg');
+    background-size: cover;
+}
+
+.cer1:hover, .cer2:hover, .cer3:hover {
+    opacity: 1;
+    box-shadow: 4px 4px 4px 4px #467083  ;
+    cursor: pointer;
+}
+
+
+
+/* interestSection */
+.interests{
+background-color: rgb(60, 163, 247);
+flex-direction: column;
+padding: 40px;
+display: flex;
+justify-content: space-around;
+box-shadow: 1px 1px 1px 1px #275a72;
+border-radius: 2px;
+}
+
+.ints {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.int{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* contactSection */
+.contact{
+ background-color: rgb(60, 163, 247);
+ display: flex;
+ justify-content: space-around;
+ flex-direction: column;
+ align-items:center;
+ padding: 40px;
+ box-shadow: 1px 1px 1px 1px #275a72;
+ border-radius: 2px;
+ margin-bottom: 30px;
+}
+
+/* footerSection */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(60, 163, 247);
+    padding: 2px;
+}
+
+
+
+
+
